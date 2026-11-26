@@ -1,0 +1,6 @@
+id,my_verdict,reason
+14,TP,search_term from request JSON formatted directly into SQL string
+12,TP,MD5 used for password hashing, crackable
+19,TP,unsafe yaml.load on uploaded file content, possible RCE
+31,TP,hardcoded secret key in source, though not literally a password
+21,FP,eval is inside bundled third-party library code, not app logic with user input
